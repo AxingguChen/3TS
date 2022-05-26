@@ -1,10 +1,10 @@
-## Welcome to GitHub Pages
+## 3TS-Coo
 
-You can use the [editor on GitHub](https://github.com/AxingguChen/3TS/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+3TS-Coo is a tool of consistency check for transactional databases. Coo check the consistency of databases in accurate (all types of anomalies), user-friendly (SQL-based test), and cost-effective (one-time checking in a few minutes) ways. You can check out the code and detail result on [GitHub](https://github.com/Tencent/3TS/tree/coo-consistency-check). Contributions in any kind are welcome.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Some verified results
 
-### Markdown
+### More results
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
