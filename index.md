@@ -17,7 +17,7 @@ The below results of OceanBase CE 3.1.2, OceanBase XE 2.2.50, Oracle 21.3.0, TDS
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-cly1{text-align:left;vertical-align:middle}
-.tg .tg-7zrl{text-align:left;vertical-align:bottom}
+.tg .tg-7zrl{text-align:left;vertical-align:middle}
 td span 
 {
   -ms-writing-mode: tb-rl;
@@ -26,13 +26,26 @@ td span
   transform: rotate(360deg);
   white-space: nowrap;
 }  
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+}
+
+.first-col {
+  left: 0px;
+}
+
+.second-col {
+  left: 100px;
+}
 </style>
 
 <table class="tg">
 <thead>
   <tr>
-    <td class="tg-7zrl"></td>
-    <td class="tg-cly1">No</td>
+    <td class="tg-7zrl sticky-col first-col"></td>
+    <td class="tg-cly1 sticky-col second-col">No.</td>
     <td class="tg-cly1">1</td>
     <td class="tg-cly1">2</td>
     <td class="tg-cly1">3</td>
@@ -72,8 +85,8 @@ td span
 </thead>
 <tbody>
   <tr>
-    <td class="tg-7zrl">DBs</td>
-    <td class="tg-cly1"><span>Test case</span></td>
+    <td class="tg-7zrl sticky-col first-col">DBs</td>
+    <td class="tg-cly1 sticky-col second-col"><span>Test case</span></td>
     <td class="tg-cly1"><span><a href="testcase/rat_sda_dirty_read.txt" target="_blank">Dirty Read</a></span></td>
     <td class="tg-cly1"><span><a href="testcase/rat_sda_non_repeatable_read.txt" target="_blank">Non-repeatable Read</a></span></td>
     <td class="tg-cly1"><span><a href="testcase/rat_sda_intermediate_read.txt" target="_blank">Intermediate Read</a></span></td> 
@@ -115,8 +128,8 @@ td span
 
   </tr>
   <tr>
-    <td class="tg-7zrl" rowspan="2">OceanBase <br> CE 3.1.0</td>
-    <td class="tg-cly1">RR</td>
+    <td class="tg-7zrl sticky-col first-col" rowspan="2">OceanBase <br> CE 3.1.0</td>
+    <td class="tg-cly1 sticky-col second-col">RR</td>
         <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -154,7 +167,7 @@ td span
     <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/repeatable-read/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-cly1">RC</td>
+    <td class="tg-cly1 sticky-col second-col">RC</td>
     <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -192,8 +205,8 @@ td span
     <td class="tg-cly1"><a href="result/ob_ce3.1_mysql/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-7zrl" rowspan="3">OceanBase <br> XE 2.2.50</td>
-    <td class="tg-cly1">SER</td>
+    <td class="tg-7zrl sticky-col first-col" rowspan="3">OceanBase <br> XE 2.2.50</td>
+    <td class="tg-cly1 sticky-col second-col">SER</td>
         <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -231,7 +244,7 @@ td span
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/serializable/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-cly1">RR</td>
+    <td class="tg-cly1 sticky-col second-col">RR</td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -270,7 +283,7 @@ td span
 
   </tr>
   <tr>
-    <td class="tg-cly1">RC</td>
+    <td class="tg-cly1 sticky-col second-col">RC</td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -308,8 +321,8 @@ td span
     <td class="tg-cly1"><a href="result/ob_xe2.2_oracle/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-7zrl" rowspan="2">Oracle <br> 21.3.0</td>
-    <td class="tg-cly1">SER</td>
+    <td class="tg-7zrl sticky-col first-col" rowspan="2">Oracle <br> 21.3.0</td>
+    <td class="tg-cly1 sticky-col second-col">SER</td>
     <td class="tg-cly1"><a href="result/oracle21c/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/oracle21c/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/oracle21c/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -347,7 +360,7 @@ td span
     <td class="tg-cly1"><a href="result/oracle21c/serializable/iat_dda_write_skew_pred_insert.txt" target="_blank">R</a></td>
   </tr>
   <tr>
-    <td class="tg-cly1">RC</td>
+    <td class="tg-cly1 sticky-col second-col">RC</td>
         <td class="tg-cly1"><a href="result/oracle21c/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/oracle21c/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/oracle21c/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -385,8 +398,8 @@ td span
     <td class="tg-cly1"><a href="result/oracle21c/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-7zrl" rowspan="3">TDSQL <br> 2.0.1</td>
-    <td class="tg-cly1">SER</td>
+    <td class="tg-7zrl sticky-col first-col" rowspan="3">TDSQL <br> 2.0.1</td>
+    <td class="tg-cly1 sticky-col second-col">SER</td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -424,7 +437,7 @@ td span
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/serializable/iat_dda_write_skew_pred_insert.txt" target="_blank">R</a></td>
   </tr>
   <tr>
-    <td class="tg-cly1">RR</td>
+    <td class="tg-cly1  sticky-col second-col">RR</td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -462,7 +475,7 @@ td span
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/repeatable-read/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-cly1">RC</td>
+    <td class="tg-cly1 sticky-col second-col">RC</td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -500,8 +513,8 @@ td span
     <td class="tg-cly1"><a href="result/tdsql_2.0.1/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-7zrl" rowspan="3">PostgreSQL <br> 12.4</td>
-    <td class="tg-cly1">SER</td>
+    <td class="tg-7zrl sticky-col first-col" rowspan="3">PostgreSQL <br> 12.4</td>
+    <td class="tg-cly1 sticky-col second-col">SER</td>
     <td class="tg-cly1"><a href="result/pg_12.4/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/pg_12.4/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/pg_12.4/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -539,7 +552,7 @@ td span
     <td class="tg-cly1"><a href="result/pg_12.4/serializable/iat_dda_write_skew_pred_insert.txt" target="_blank">R</a></td>
   </tr>
   <tr>
-    <td class="tg-cly1">RR</td>
+    <td class="tg-cly1 sticky-col second-col">RR</td>
     <td class="tg-cly1"><a href="result/pg_12.4/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/pg_12.4/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/pg_12.4/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -577,7 +590,7 @@ td span
     <td class="tg-cly1"><a href="result/pg_12.4/repeatable-read/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-cly1">RC</td>
+    <td class="tg-cly1 sticky-col second-col">RC</td>
     <td class="tg-cly1"><a href="result/pg_12.4/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/pg_12.4/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-cly1"><a href="result/pg_12.4/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -628,13 +641,34 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{text-align:left;vertical-align:middle}
+td span 
+{
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  white-space: nowrap;
+}
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+}
+
+.first-col {
+  left: 0px;
+}
+
+.second-col {
+  left: 100px;
+}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky">NO</th>
+    <th class="tg-0pky sticky-col first-col"></th>
+    <th class="tg-0pky sticky-col second-col">No.</th>
     <th class="tg-0pky">1</th>
     <th class="tg-0pky">2</th>
     <th class="tg-0pky">3</th>
@@ -672,8 +706,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
 </thead>
 <tbody>
   <tr>
-    <td class="tg-7zrl">DBs</td>
-    <td class="tg-cly1"><span>Test case</span></td>
+    <td class="tg-7zrl sticky-col first-col">DBs</td>
+    <td class="tg-cly1 sticky-col second-col"><span>Test case</span></td>
     <td class="tg-cly1"><span><a href="testcase/rat_sda_dirty_read.txt" target="_blank">Dirty Read</a></span></td>
     <td class="tg-cly1"><span><a href="testcase/rat_sda_non_repeatable_read.txt" target="_blank">Non-repeatable Read</a></span></td>
     <td class="tg-cly1"><span><a href="testcase/rat_sda_intermediate_read.txt" target="_blank">Intermediate Read</a></span></td> 
@@ -710,8 +744,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
   </tr>
 
   <tr>
-    <td class="tg-0pky" rowspan="4">Mysql</td>
-    <td class="tg-0pky">SER</td>
+    <td class="tg-0pky sticky-col first-col" rowspan="4">MySQL <br> 8.0.20</td>
+    <td class="tg-0pky sticky-col second-col">SER</td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -747,7 +781,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/mysql_8.0.20/serializable/iat_mda_step_iat.txt" target="_blank">D</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RR</td>
+    <td class="tg-0pky sticky-col second-col">RR</td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -783,7 +817,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/mysql_8.0.20/repeatable-read/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RC</td>
+    <td class="tg-0pky sticky-col second-col">RC</td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -819,7 +853,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RU</td>
+    <td class="tg-0pky sticky-col second-col">RU</td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-uncommitted/rat_sda_dirty_read.txt" target="_blank">A</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-uncommitted/rat_sda_non_repeatable_read.txt" target="_blank">A</a></td>
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-uncommitted/rat_sda_intermediate_read.txt" target="_blank">A</a></td>
@@ -855,8 +889,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/mysql_8.0.20/read-uncommitted/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="4">MyRocks</td>
-    <td class="tg-0pky">SER</td>
+    <td class="tg-0pky sticky-col first-col" rowspan="4">MyRocks <br> 8.0.26</td>
+    <td class="tg-0pky sticky-col second-col">SER</td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -892,7 +926,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/serializable/iat_mda_step_iat.txt" target="_blank">D</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RR</td>
+    <td class="tg-0pky sticky-col second-col">RR</td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -928,7 +962,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/repeatable-read/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RC</td>
+    <td class="tg-0pky sticky-col second-col">RC</td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -964,7 +998,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RU</td>
+    <td class="tg-0pky sticky-col second-col">RU</td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-uncommitted/rat_sda_dirty_read.txt" target="_blank">A</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-uncommitted/rat_sda_non_repeatable_read.txt" target="_blank">A</a></td>
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-uncommitted/rat_sda_intermediate_read.txt" target="_blank">A</a></td>
@@ -1000,8 +1034,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/myrocks_8.0.26/read-uncommitted/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="5">SQL SERVER</td>
-    <td class="tg-0pky">SER</td>
+    <td class="tg-0pky sticky-col first-col" rowspan="5">SQL Server <br> 15.0</td>
+    <td class="tg-0pky sticky-col second-col">SER</td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1037,7 +1071,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/sqlserver_15.0/serializable/iat_mda_step_iat.txt" target="_blank">D</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">SI</td>
+    <td class="tg-0pky sticky-col second-col">SI</td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/snapshot/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/snapshot/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/snapshot/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1073,7 +1107,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/sqlserver_15.0/snapshot/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RR</td>
+    <td class="tg-0pky sticky-col second-col">RR</td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1109,7 +1143,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/sqlserver_15.0/repeatable-read/iat_mda_step_iat.txt" target="_blank">D</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RC</td>
+    <td class="tg-0pky sticky-col second-col">RC</td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">A</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1145,7 +1179,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RU</td>
+    <td class="tg-0pky sticky-col second-col">RU</td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-uncommitted/rat_sda_dirty_read.txt" target="_blank">A</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-uncommitted/rat_sda_non_repeatable_read.txt" target="_blank">A</a></td>
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-uncommitted/rat_sda_intermediate_read.txt" target="_blank">A</a></td>
@@ -1181,8 +1215,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/sqlserver_15.0/read-uncommitted/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="3">TiDB</td>
-    <td class="tg-0pky">OPT</td>
+    <td class="tg-0pky sticky-col first-col" rowspan="3">TiDB <br> 4.0.5/5.4.0</td>
+    <td class="tg-0pky sticky-col second-col">OPT</td>
     <td class="tg-0pky"><a href="result/tidb_opt_4.0.5/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/tidb_opt_4.0.5/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/tidb_opt_4.0.5/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1218,7 +1252,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/tidb_opt_4.0.5/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RR</td>
+    <td class="tg-0pky sticky-col second-col">RR</td>
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/repeatable-read/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/repeatable-read/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/repeatable-read/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1254,7 +1288,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/repeatable-read/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RC</td>
+    <td class="tg-0pky sticky-col second-col">RC</td>
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1290,8 +1324,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/tidb_per_4.0.5/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="2">Oracle</td>
-    <td class="tg-0pky">SER</td>
+    <td class="tg-0pky sticky-col first-col" rowspan="2">Oracle <br> 12.1.0</td>
+    <td class="tg-0pky sticky-col second-col">SER</td>
     <td class="tg-0pky"><a href="result/oracle_12c/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/oracle_12c/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/oracle_12c/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1327,7 +1361,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/oracle_12c/serializable/iat_mda_step_iat.txt" target="_blank">R</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RC</td>
+    <td class="tg-0pky sticky-col second-col">RC</td>
     <td class="tg-0pky"><a href="result/oracle_12c/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/oracle_12c/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/oracle_12c/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1363,8 +1397,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/oracle_12c/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="2">Greenplum</td>
-    <td class="tg-0pky">SER</td>
+    <td class="tg-0pky sticky-col first-col" rowspan="2">Greenplum <br> 6.20.0</td>
+    <td class="tg-0pky sticky-col second-col">SER</td>
     <td class="tg-0pky"><a href="result/gp_6.20.0/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/gp_6.20.0/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/gp_6.20.0/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1400,7 +1434,7 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/gp_6.20.0/serializable/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">RC</td>
+    <td class="tg-0pky sticky-col second-col">RC</td>
     <td class="tg-0pky"><a href="result/gp_6.20.0/read-committed/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/gp_6.20.0/read-committed/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/gp_6.20.0/read-committed/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1436,8 +1470,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/gp_6.20.0/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">CockroachDB</td>
-    <td class="tg-0pky">SER</td>
+    <td class="tg-0pky sticky-col first-col">CockroachDB <br> 19.2.2</td>
+    <td class="tg-0pky sticky-col second-col">SER</td>
     <td class="tg-0pky"><a href="result/crdb_19.2.2/serializable/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/crdb_19.2.2/serializable/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/crdb_19.2.2/serializable/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
@@ -1473,8 +1507,8 @@ The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.
     <td class="tg-0pky"><a href="result/crdb_19.2.2/serializable/iat_mda_step_iat.txt" target="_blank">R</a></td>
   </tr>
   <tr>
-    <td class="tg-0pky">MongoDB</td>
-    <td class="tg-0pky">SI</td>
+    <td class="tg-0pky sticky-col first-col">MongoDB <br> 4.4.4</td>
+    <td class="tg-0pky sticky-col second-col">SI</td>
     <td class="tg-0pky"><a href="result/mongodb_4.4.4/snapshot/rat_sda_dirty_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mongodb_4.4.4/snapshot/rat_sda_non_repeatable_read.txt" target="_blank">P</a></td>
     <td class="tg-0pky"><a href="result/mongodb_4.4.4/snapshot/rat_sda_intermediate_read.txt" target="_blank">P</a></td>
