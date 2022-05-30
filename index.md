@@ -1234,8 +1234,9 @@ td span
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/serializable/iat_dda_write_skew.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/serializable/iat_dda_write_skew_committed.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/serializable/iat_mda_step_iat.txt" target="_blank">A</a></td>
+    <!-- and 
     <td class="tg-0pky" style="background-color:#D5F5E3"><a href="result/ob_xe2.2_oracle/serializable/rat_sda_non_repeatable_read_pred_insert.txt" target="_blank">P</a></td>
-    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/serializable/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
+    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/serializable/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td> -->
   </tr>
   <tr>
     <td class="tg-0pky sticky-col second-col">RR</td>
@@ -1272,8 +1273,9 @@ td span
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/repeatable-read/iat_dda_write_skew.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/repeatable-read/iat_dda_write_skew_committed.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/repeatable-read/iat_mda_step_iat.txt" target="_blank">A</a></td>
+    <!-- and 
     <td class="tg-0pky" style="background-color:#D5F5E3"><a href="result/ob_xe2.2_oracle/repeatable-read/rat_sda_non_repeatable_read_pred_insert.txt" target="_blank">P</a></td>
-    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/repeatable-read/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
+    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/repeatable-read/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td> -->
   </tr>
   <tr>
     <td class="tg-0pky sticky-col second-col">RC</td>
@@ -1310,8 +1312,9 @@ td span
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/read-committed/iat_dda_write_skew.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/read-committed/iat_dda_write_skew_committed.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
+    <!-- 
     <td class="tg-0pky" style="background-color:#D5F5E3"><a href="result/ob_xe2.2_oracle/read-committed/rat_sda_non_repeatable_read_pred_insert.txt" target="_blank">P</a></td>
-    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
+    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_xe2.2_oracle/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td> -->
   </tr>
   <tr>
     <td class="tg-0pky sticky-col first-col" rowspan="2">OceanBase <br> CE v3.1.0 <br> 2022.04.30</td>
@@ -1349,8 +1352,9 @@ td span
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/repeatable-read/iat_dda_write_skew.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/repeatable-read/iat_dda_write_skew_committed.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/repeatable-read/iat_mda_step_iat.txt" target="_blank">A</a></td>
+    <!--
     <td class="tg-0pky" style="background-color:#D5F5E3"><a href="result/ob_ce3.1_mysql/repeatable-read/rat_sda_non_repeatable_read_pred_insert.txt" target="_blank">P</a></td>
-    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/repeatable-read/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
+    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/repeatable-read/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>-->
   </tr>
   <tr>
     <td class="tg-0pky sticky-col second-col">RC</td>
@@ -1387,8 +1391,9 @@ td span
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/read-committed/iat_dda_write_skew.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/read-committed/iat_dda_write_skew_committed.txt" target="_blank">A</a></td>
     <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/read-committed/iat_mda_step_iat.txt" target="_blank">A</a></td>
+    <!--
     <td class="tg-0pky" style="background-color:#D5F5E3"><a href="result/ob_ce3.1_mysql/read-committed/rat_sda_non_repeatable_read_pred_insert.txt" target="_blank">P</a></td>
-    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td>
+    <td class="tg-0pky" style="background-color:#FCF3CF"><a href="result/ob_ce3.1_mysql/read-committed/iat_dda_write_skew_pred_insert.txt" target="_blank">A</a></td> -->
   </tr>
   <tr>
     <td class="tg-0pky sticky-col first-col" rowspan="2">Greenplum <br> v6.20.0 <br> 2022.04.30</td>
