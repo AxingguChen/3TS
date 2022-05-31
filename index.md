@@ -1,12 +1,14 @@
 ## 3TS-Coo
 
-3TS-Coo is a consistency check tool for transactional databases. Coo check the consistency of databases in accurate (all types of anomalies), user-friendly (SQL-based test), and cost-effective (one-time checking in a few minutes) ways. You can check out the code and detail result on [GitHub](https://github.com/Tencent/3TS/tree/coo-consistency-check){:target="_blank"}. Contributions in any kind are welcome.
+3TS-Coo is a consistency check tool for transactional databases. Coo checks the consistency of databases in accurate (all types of anomalies), user-friendly (SQL-based test), and cost-effective (one-time checking in a few minutes) ways. You can check out the code and detail result on [GitHub](https://github.com/Tencent/3TS/tree/coo-consistency-check){:target="_blank"}. Contributions in any kind are welcome.
 
-The original and executed schedules are available for analysis and debugging. The result behaviors are classified into two types, i.e., anomaly (A) and consistency. For anomaly occurrence, data anomalies are not recognized by databases, resulting in data inconsistencies, meaning the executed schedule with no equivalent serializable execution (or a POP cycle). While for the consistent performance, databases either pass (P) the anomaly test cases with a serializable result (no Partial Order Pair (POP) cycle) cycle or rollback transactions due to rules (R), deadlock detection (D), or timeout (T) reached. The isolation levels are Serializable (SER), Repeatable Read (RR), Read Committed (RC), Read Uncommitted (RU), and Snapshot Isolation (SI).
+The original and executed schedules are available for analysis and debugging. You can click each hyperlink for more detailed test cases and executed results. The [formal expression](/result/docs/coo_anomaly_cookbook.pdf) of test cases are also available. 
 
-### Some verified results
+The result behaviors are classified into two types, i.e., anomaly (A) and consistency. For anomaly occurrence, data anomalies are not recognized by databases, resulting in data inconsistencies, meaning the executed schedule with no equivalent serializable execution (or a POP cycle). While for the consistent performance, databases either pass (P) the anomaly test cases with a serializable result (no Partial Order Pair (POP) cycle) or rollback transactions due to rules (R), deadlock detection (D), or timeout (T) reached. The isolation levels are Serializable (SER), Repeatable Read (RR), Read Committed (RC), Read Uncommitted (RU), and Snapshot Isolation (SI).
 
-The below results of Oracle 21.3.0, TDSQL 2.0.1, and PostgreSQL 12.4 are verified and confirmed by [CCIC Southern Testing Co., Ltd.](http://www.ccic-set.com/){:target="_blank"}, check out the full [report](result/docs/test_report_ccic20220526.pdf){:target="_blank"}.
+### Verified results
+
+The below results of Oracle 21.3.0, TDSQL 2.0.1, and PostgreSQL 12.4 are verified and confirmed by [CCIC Southern Testing Co., Ltd.](http://www.ccic-set.com/){:target="_blank"}, check out the full [report](result/docs/test_report_ccic20220526.pdf){:target="_blank"}. 
 
 
 
@@ -433,7 +435,7 @@ td span
 </table>
 
 
-### More results
+### Tested results
 
 The below is the result of checking MySQL 8.0.20, MyRocks 8.0.26, SQL Server 15.0, TiDB 4.0.5/5.4.0, Oracle 12.1.0, OceanBase XE 2.2.50, OceanBase CE 3.1.2, Greenplum 6.20, CockroachDB 19.2.2, and MongoDB 4.4.4.
 
@@ -1544,6 +1546,10 @@ td span
   </tr>
 </tbody>
 </table>
+
+### Follow up
+
+We are testing the predicate
 
 
 ### Contact
