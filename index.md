@@ -1,10 +1,10 @@
 ## 3TS-Coo
 
-3TS-Coo is a consistency check tool for transactional databases. Coo checks the consistency of databases in accurate (all types of anomalies), user-friendly (SQL-based test), and cost-effective (one-time checking in a few minutes) ways. You can check out the code and detail result on the newest [GitHub](https://github.com/Tencent/3TS/tree/coo-consistency-check){:target="_blank"}{:target="_blank"} branch. Contributions in any kind are welcome.
+3TS-Coo is a consistency check tool for transactional databases. Coo checks the consistency of databases in accurate (all types of anomalies), user-friendly (SQL-based test), and cost-effective (one-time checking in a few minutes) ways. You can check out the code and detailed result on [GitHub](https://github.com/Tencent/3TS/tree/coo-consistency-check){:target="_blank"} branch. Contributions in any kind are welcome.
 
-The original and executed schedules are available for analysis and debugging. You can click each hyperlink for more detailed test cases and executed results. The [formal expressions](/result/docs/coo_anomaly_cookbook.pdf) of test cases are also available. 
+The original and executed schedules are available for analysis and debugging. You can click each hyperlink for more detailed test cases and executed results. The [formal expressions](/result/docs/coo_anomaly_cookbook.pdf){:target="_blank"} of test cases are also available. 
 
-The result behaviors are classified into two types, i.e., anomaly (A) and consistency. For anomaly occurrence, data anomalies are not recognized by databases, resulting in data inconsistencies, meaning the executed schedule with no equivalent serializable execution (or a POP cycle). While for the consistent performance, databases either pass (P) the anomaly test cases with a serializable result (no Partial Order Pair (POP) cycle) or rollback transactions due to rules (R), deadlock detection (D), or timeout (T) reached. The isolation levels are Serializable (SER), Repeatable Read (RR), Read Committed (RC), Read Uncommitted (RU), and Snapshot Isolation (SI).
+The result behaviors are classified into two types, i.e., anomaly (A) and consistency. For anomaly occurrence, data anomalies are not recognized by databases, resulting in data inconsistencies, meaning the executed schedule with no equivalent serializable execution (or a [Partial Order Pair (POP) cycle](/result/docs/coo_pop_model.pdf){:target="_blank"}). While for the consistent performance, databases either pass (P) the anomaly test cases with a serializable result (no POP cycle) or rollback transactions due to rules (R), deadlock detection (D), or timeout (T) reached. The isolation levels are Serializable (SER), Repeatable Read (RR), Read Committed (RC), Read Uncommitted (RU), and Snapshot Isolation (SI).
 
 ### Verified results
 
@@ -24,7 +24,6 @@ td span
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  transform: rotate(360deg);
   white-space: nowrap;
 }
 .sticky-col {
@@ -86,7 +85,7 @@ td span
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky sticky-col first-col">DBs</td>
+    <td class="tg-0pky sticky-col first-col">Databases <br> Versions <br> Report date</td>
     <td class="tg-0pky sticky-col second-col"><span>Test case</span></td>
     <td class="tg-0pky"><span><a href="testcase/rat_sda_dirty_read.txt" target="_blank">Dirty Read</a></span></td>
     <td class="tg-0pky"><span><a href="testcase/rat_sda_non_repeatable_read.txt" target="_blank">Non-repeatable Read</a></span></td>
@@ -451,7 +450,6 @@ td span
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  transform: rotate(360deg);
   white-space: nowrap;
 }
 .sticky-col {
@@ -510,7 +508,7 @@ td span
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky sticky-col first-col">DBs</td>
+    <td class="tg-0pky sticky-col first-col">Databases <br> Versions <br> Report date</td>
     <td class="tg-0pky sticky-col second-col"><span>Test case</span></td>
     <td class="tg-0pky"><span><a href="testcase/rat_sda_dirty_read.txt" target="_blank">Dirty Read</a></span></td>
     <td class="tg-0pky"><span><a href="testcase/rat_sda_non_repeatable_read.txt" target="_blank">Non-repeatable Read</a></span></td>
@@ -1549,7 +1547,7 @@ td span
 
 ### Follow up
 
-We are testing the scrnarios with predicates. Please stay tuned!
+We are testing the scenarios with predicates. Please stay tuned!
 
 ### Contact
 
