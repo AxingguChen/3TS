@@ -6,11 +6,9 @@ The original and executed schedules are available for analysis and debugging. Yo
 
 The result behaviors are classified into two types, i.e., anomaly (A) and consistency. For anomaly occurrence, data anomalies are not recognized by databases, resulting in data inconsistencies, meaning the executed schedule with no equivalent serializable execution (or a [Partial Order Pair (POP) cycle](/result/docs/coo_pop_model.pdf){:target="_blank"}). While for the consistent performance, databases either pass (P) the anomaly test cases with a serializable result (no POP cycle) or rollback transactions due to rules (R), deadlock detection (D), or timeout (T) reached. The isolation levels are Serializable (SER), Repeatable Read (RR), Read Committed (RC), Read Uncommitted (RU), and Snapshot Isolation (SI).
 
-### Verified results
+### Interesting results
 
-The below results of Oracle 21.3.0, TDSQL 2.0.1, and PostgreSQL 12.4 are verified and confirmed by [CCIC Southern Testing Co., Ltd.](http://www.ccic-set.com/){:target="_blank"}, check out the full [report](result/docs/test_report_ccic20220526.pdf){:target="_blank"}. 
-
-
+Please check out the below results of Oracle 21.3.0, TDSQL 2.0.1, and PostgreSQL 12.4. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
